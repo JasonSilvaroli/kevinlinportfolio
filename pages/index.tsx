@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
     return (
-        <Container id="main">
+        <Container id="main" sx={{ background: "rgba(76, 175, 80, 0)" }}>
             <Grid
                 container
                 direction="column"
