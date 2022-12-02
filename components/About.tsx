@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Title } from "./Title";
+import Kevin from "../public/images/kkevin.jpg";
+import Image from "next/image";
 
 interface AboutProps {}
 
@@ -39,7 +41,8 @@ export const About: React.FC<AboutProps> = ({}) => {
                         backgroundColor: "#FBFAF5",
                         width: { xs: "75%", md: "50%" },
                         margin: 0,
-                        paddingBottom: "3rem",
+                        paddingBottom: "2rem",
+                        borderRadius: "10px",
                     }}
                 >
                     <Grid
@@ -57,25 +60,46 @@ export const About: React.FC<AboutProps> = ({}) => {
                             }}
                         >
                             <Typography variant="body1">
-                                &emsp;&emsp;Nam tooverslag met als bevaarbaar
-                                mogendheid ondernomen. Luister javanen om ad
-                                leveren krijgen. In in langs welks lucht halen
-                                groen voort. Zin roestige troepjes gif indische
-                                ook. Was sap apen vorm van rug maal. Gouden
-                                vloeit ad en er schaal. Misschien zes opbrengst
-                                bewegende zin elk met. Vergissing far buitendien
-                                ten verbazende ook verwijderd wantrouwen.
+                                I’m Kevin Lin, an aspiring creative with an
+                                excessive amount of energy. I’m a 21 year old
+                                Chinese Canadian/American who has stumbled onto
+                                this field by accident and I am constantly
+                                looking to improve my craft and skills.
                             </Typography>
                             <br></br>
                             <Typography variant="body1">
-                                &emsp;&emsp;Groot geeft omdat loopt tin het het
-                                sterk terug een. Lieden handen enkele kleine en
-                                eerder mollen of ze. Te bordeaux op de werkzaam
-                                overgaat nu. Mag bewijs het zelden verder van
-                                wat. Kwarts bamboe meende liever van voeten ton
-                                mooren aan hun. De bezorgden gomboomen kleederen
-                                af de gewijzigd.
+                                Although my mandarin may be at a third grade
+                                level I can assure you that my work ethic is out
+                                of this world. As a visual and very hands-on
+                                learner, I've always wondered what I wanted to
+                                do in life and this is where it has led me so
+                                far. What I do know is that my end goal is to be
+                                kind to everyone and help others.
                             </Typography>
+                            <br />
+                            <Typography variant="body1">
+                                For fun I enjoy spending time with my friends,
+                                wandering the streets, gaming, and going to the
+                                gym (I go 6 days a week so you know i’m
+                                consistent).
+                            </Typography>
+                            <br />
+                            <Typography variant="body1">
+                                Always looking forward to meeting new people and
+                                hearing your story!
+                            </Typography>
+                            <br />
+                            <Typography variant="subtitle2" fontWeight={400}>
+                                P.S. I have dual citizenship if you’re asking
+                                for a friend!
+                            </Typography>
+                        </Grid>
+                        <Grid item sx={{ width: "75%" }}>
+                            <Image
+                                src={Kevin}
+                                alt="kevin"
+                                layout="responsive"
+                            ></Image>
                         </Grid>
                     </Grid>
                 </Container>

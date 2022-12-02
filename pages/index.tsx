@@ -1,17 +1,10 @@
-import { Divider, Grid, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
-import Head from "next/head";
-import { useRef } from "react";
-import { About } from "../components/About";
-import { Polaroid } from "../components/Polaroid";
-import { PreviousWork } from "../components/PreviousWork";
-import { Resume } from "../components/Resume";
+import { Grid, Typography } from "@mui/material";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
-            <main style={{ opacity: 1 }}>
+        <div className={styles.container} id="test">
+            <div style={{ opacity: 1 }} id="main">
                 <a id="home-section"></a>
                 <Grid
                     container
@@ -43,7 +36,14 @@ export default function Home() {
                         </Typography>
                     </Grid>
                 </Grid>
-            </main>
+                <Typography
+                    color={"#FBFAF5"}
+                    textAlign={"center"}
+                    marginTop="20rem"
+                >
+                    Contact Me
+                </Typography>
+            </div>
         </div>
     );
 }
