@@ -30,16 +30,18 @@ export default function Home() {
                             variant="h2"
                             letterSpacing={10}
                             fontWeight="400"
+                            color={"#FBFAF5"}
                         >
                             Kevin Lin
                         </Typography>
                     </Grid>
                     <Grid item>
                         <Typography
+                            color={"#FBFAF5"}
                             textAlign={"center"}
                             variant="h6"
                             letterSpacing={5}
-                            fontWeight="200"
+                            fontWeight="300"
                         >
                             Creative Advertising
                         </Typography>

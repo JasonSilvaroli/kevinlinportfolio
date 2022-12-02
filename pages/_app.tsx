@@ -5,6 +5,7 @@ import {
     CssBaseline,
     createTheme,
     useMediaQuery,
+    useTheme,
 } from "@mui/material";
 
 import createEmotionCache from "../utility/createEmotionCache";
@@ -24,39 +25,17 @@ const MyApp = (props: any) => {
         pageProps,
     } = props;
 
-    const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-
-    const [mode, setMode] = React.useState<"light" | "dark">(
-        prefersDarkMode ? "dark" : "light"
-    );
-
-    const colorMode = React.useMemo(
-        () => ({
-            toggleColorMode: () => {
-                setMode((prevMode) =>
-                    prevMode === "light" ? "dark" : "light"
-                );
-            },
-        }),
-        []
-    );
-
-    const theme = React.useMemo(
-        () => (mode === "light" ? lightTheme : darkTheme),
-        [mode]
-    );
+    const theme = useTheme();
 
     return (
-        <ColorModeContext.Provider value={colorMode}>
-            <CacheProvider value={emotionCache}>
-                <ThemeProvider theme={theme}>
-                    <CssBaseline />
-                    <NavBar colorModeContext={ColorModeContext} />
-                    <Component {...pageProps} />
-                    <Footer />
-                </ThemeProvider>
-            </CacheProvider>
-        </ColorModeContext.Provider>
+        <CacheProvider value={emotionCache}>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <NavBar colorModeContext={ColorModeContext} />
+                <Component {...pageProps} />
+                <Footer />
+            </ThemeProvider>
+        </CacheProvider>
     );
 };
 
