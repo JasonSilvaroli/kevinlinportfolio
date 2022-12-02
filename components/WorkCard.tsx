@@ -71,7 +71,9 @@ export const WorkCard: React.FC<WorkCardProps> = ({
                         marginX: "10%",
                     }}
                 >
-                    <Typography textAlign="center">{description}</Typography>
+                    <Typography textAlign="center" sx={{ color: "#FBFAF5" }}>
+                        {description}
+                    </Typography>
                 </Grid>
             </Grid>
         </Paper>

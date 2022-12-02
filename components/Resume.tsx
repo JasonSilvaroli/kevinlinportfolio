@@ -68,7 +68,10 @@ export const Resume: React.FC<ResumeProps> = ({}) => {
                             <EmailIcon />
                             <a
                                 href="mailto:kevinlin@gmail.com"
-                                style={{ textDecoration: "underline" }}
+                                style={{
+                                    textDecoration: "underline",
+                                    color: "#0D1321",
+                                }}
                             >
                                 kevinlin@gmail.com
                             </a>
@@ -84,7 +87,10 @@ export const Resume: React.FC<ResumeProps> = ({}) => {
                             <PhonelinkRingIcon />
                             <a
                                 href="tel:+1 647 234 8643"
-                                style={{ textDecoration: "underline" }}
+                                style={{
+                                    textDecoration: "underline",
+                                    color: "#0D1321",
+                                }}
                             >
                                 +1 647 234 8643
                             </a>
@@ -101,7 +107,10 @@ export const Resume: React.FC<ResumeProps> = ({}) => {
                             <a
                                 href="https://www.google.com/maps/place/Toronto,+ON/@43.7181552,-79.5184826,11z/"
                                 target="_blank"
-                                style={{ textDecoration: "underline" }}
+                                style={{
+                                    textDecoration: "underline",
+                                    color: "#0D1321",
+                                }}
                             >
                                 Toronto, Ontario
                             </a>
