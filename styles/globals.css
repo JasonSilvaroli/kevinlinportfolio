@@ -38,4 +38,5 @@ a.anchor {
   position: relative;
   top: -10rem;
   visibility: hidden;
+  opacity: 1;
 }

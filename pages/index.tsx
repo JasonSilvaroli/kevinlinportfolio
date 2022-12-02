@@ -16,7 +16,8 @@ export default function Home() {
                 <meta name="description" content="kevin lin website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main id="home-section">
+            <main style={{ opacity: 1 }}>
+                <a id="home-section"></a>
                 <Grid
                     container
                     direction="column"
