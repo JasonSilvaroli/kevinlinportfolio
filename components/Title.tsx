@@ -11,9 +11,10 @@ import React from "react";
 
 interface TitleProps {
     title: String;
+    subtitle?: String;
 }
 
-export const Title: React.FC<TitleProps> = ({ title }) => {
+export const Title: React.FC<TitleProps> = ({ title, subtitle = "" }) => {
     const theme = createTheme({
         components: {
             MuiTypography: {
@@ -58,6 +59,16 @@ export const Title: React.FC<TitleProps> = ({ title }) => {
                         {title}
                     </Typography>
                 </Grid>
+                {subtitle !== "" && (
+                    <Grid item>
+                        <Typography
+                            variant={largeScreen ? "h6" : "h6"}
+                            textAlign="center"
+                        >
+                            {subtitle}
+                        </Typography>
+                    </Grid>
+                )}
             </Grid>
         </ThemeProvider>
     );

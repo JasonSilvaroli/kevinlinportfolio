@@ -1,4 +1,5 @@
 import { Container, Grid, Typography } from "@mui/material";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -34,13 +35,15 @@ export default function Home() {
                     </Typography>
                 </Grid>
             </Grid>
-            <Typography
-                color={"#FBFAF5"}
-                textAlign={"center"}
-                sx={{ marginTop: { xs: "0rem", md: "20rem" } }}
-            >
-                Contact Me
-            </Typography>
+            <Link href="/contact">
+                <Typography
+                    color={"#FBFAF5"}
+                    textAlign={"center"}
+                    sx={{ marginTop: { xs: "0rem", md: "20rem" } }}
+                >
+                    Contact Me
+                </Typography>
+            </Link>
         </Container>
     );
 }

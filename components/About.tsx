@@ -12,6 +12,7 @@ import React from "react";
 import { Title } from "./Title";
 import Kevin from "../public/images/kkevin.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 interface AboutProps {}
 
@@ -39,7 +40,7 @@ export const About: React.FC<AboutProps> = ({}) => {
                     maxWidth={false}
                     sx={{
                         backgroundColor: "#FBFAF5",
-                        width: { xs: "75%", md: "50%" },
+                        width: { xs: "90%", md: "50%" },
                         margin: 0,
                         paddingBottom: "2rem",
                         borderRadius: "10px",
@@ -54,52 +55,74 @@ export const About: React.FC<AboutProps> = ({}) => {
                         <Title title="About" />
                         <Grid
                             item
+                            container
                             sx={{
-                                width: "75%",
-                                marginTop: "2rem",
+                                width: "100%",
+                                marginY: "2rem",
                             }}
+                            direction={largeScreen ? "row" : "column"}
+                            justifyContent="center"
+                            alignItems="center"
+                            spacing={3}
                         >
-                            <Typography variant="body1">
-                                I’m Kevin Lin, an aspiring creative with an
-                                excessive amount of energy. I’m a 21 year old
-                                Chinese Canadian/American who has stumbled onto
-                                this field by accident and I am constantly
-                                looking to improve my craft and skills.
-                            </Typography>
-                            <br></br>
-                            <Typography variant="body1">
-                                Although my mandarin may be at a third grade
-                                level I can assure you that my work ethic is out
-                                of this world. As a visual and very hands-on
-                                learner, I've always wondered what I wanted to
-                                do in life and this is where it has led me so
-                                far. What I do know is that my end goal is to be
-                                kind to everyone and help others.
-                            </Typography>
-                            <br />
-                            <Typography variant="body1">
-                                For fun I enjoy spending time with my friends,
-                                wandering the streets, gaming, and going to the
-                                gym (I go 6 days a week so you know i’m
-                                consistent).
-                            </Typography>
-                            <br />
-                            <Typography variant="body1">
-                                Always looking forward to meeting new people and
-                                hearing your story!
-                            </Typography>
-                            <br />
-                            <Typography variant="subtitle2" fontWeight={400}>
-                                P.S. I have dual citizenship if you’re asking
-                                for a friend!
-                            </Typography>
-                        </Grid>
-                        <Grid item sx={{ width: "75%" }}>
-                            <Image
-                                src={Kevin}
-                                alt="kevin"
-                                layout="responsive"
-                            ></Image>
+                            <Grid item xs={5}>
+                                <Image
+                                    src={Kevin}
+                                    alt="kevin"
+                                    layout="responsive"
+                                ></Image>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Typography variant="body1">
+                                    I’m Kevin Lin, an aspiring creative with an
+                                    excessive amount of energy. I’m a 21 year
+                                    old Chinese Canadian/American who has
+                                    stumbled onto this field by accident and I
+                                    am constantly looking to improve my craft
+                                    and skills.
+                                </Typography>
+                                <br></br>
+                                <Typography variant="body1">
+                                    Although my mandarin may be at a third grade
+                                    level I can assure you that my work ethic is
+                                    out of this world. As a visual and very
+                                    hands-on learner, I've always wondered what
+                                    I wanted to do in life and this is where it
+                                    has led me so far. What I do know is that my
+                                    end goal is to be kind to everyone and help
+                                    others.
+                                </Typography>
+                                <br />
+                                <Typography variant="body1">
+                                    For fun I enjoy spending time with my
+                                    friends, wandering the streets, gaming, and
+                                    going to the gym (I go 6 days a week so you
+                                    know i’m consistent).
+                                </Typography>
+                                <br />
+                                <Typography variant="body1" display="inline">
+                                    Lets chat sometime! I am always looking
+                                    forward to meeting new people and hearing
+                                    their story!
+                                </Typography>
+                                <Link href="/contact">
+                                    <Typography
+                                        display="inline"
+                                        variant="body1"
+                                    >
+                                        &#160;Contact Me
+                                    </Typography>
+                                </Link>
+                                <br />
+                                <br />
+                                <Typography
+                                    variant="subtitle2"
+                                    fontWeight={400}
+                                >
+                                    P.S. I have dual citizenship in case you are
+                                    wondering!
+                                </Typography>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Container>

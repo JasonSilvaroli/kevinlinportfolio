@@ -31,6 +31,7 @@ export const PreviousWork: React.FC<PreviousWorkProps> = ({}) => {
                     margin: 0,
                     paddingBottom: "1rem",
                     paddingTop: "1rem",
+                    borderRadius: "10px",
                 }}
             >
                 <Grid
@@ -39,14 +40,18 @@ export const PreviousWork: React.FC<PreviousWorkProps> = ({}) => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Title title="Previous Work" />
+                    <Title
+                        title="Previous Work"
+                        subtitle="These are some examples of my previous work"
+                    />
+
                     <Grid
                         container
                         item
                         direction="row"
                         alignItems="center"
                         justifyContent="center"
-                        sx={{ marginTop: { xs: "1ren", md: "3rem" } }}
+                        sx={{ marginTop: { xs: "1rem", md: "3rem" } }}
                     >
                         <ImageList
                             variant="masonry"
