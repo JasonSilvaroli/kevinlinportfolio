@@ -39,7 +39,7 @@ export const PreviousWork: React.FC<PreviousWorkProps> = ({}) => {
                     alignItems="center"
                     justifyContent="center"
                 >
-                    <Title title="Pervious Work" />
+                    <Title title="Previous Work" />
                     <Grid
                         container
                         item

@@ -11,11 +11,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
     return (
         <div className={styles.container}>
-            <Head>
-                <title>Kevin Lin - Creative Advertising</title>
-                <meta name="description" content="kevin lin website" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <main style={{ opacity: 1 }}>
                 <a id="home-section"></a>
                 <Grid
@@ -23,7 +18,7 @@ export default function Home() {
                     direction="column"
                     justifyContent="center"
                     alignItems="center"
-                    sx={{ marginTop: "25rem", marginBottom: "25rem" }}
+                    sx={{ marginTop: "25rem" }}
                 >
                     <Grid item>
                         <Typography
@@ -48,42 +43,6 @@ export default function Home() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <a id="about-section"></a>
-                <div>
-                    <About />
-                </div>
-                <div style={{ backgroundColor: "#F4FFF8" }}>
-                    <Divider
-                        variant="fullWidth"
-                        sx={{
-                            borderBottomWidth: "0.1rem",
-                            color: "#F4FFF8",
-                            background: "#F4FFF8",
-                            width: "90%",
-                            margin: "auto",
-                        }}
-                    />
-                </div>
-                <a className="anchor" id="work-section"></a>
-                <div>
-                    <PreviousWork />
-                </div>
-                <div style={{ backgroundColor: "#F4FFF8" }}>
-                    <Divider
-                        variant="fullWidth"
-                        sx={{
-                            borderBottomWidth: "0.1rem",
-                            color: "#F4FFF8",
-                            background: "#F4FFF8",
-                            width: "90%",
-                            margin: "auto",
-                        }}
-                    />
-                </div>
-                <a className="anchor" id="resume-section"></a>
-                <div>
-                    <Resume />
-                </div>
             </main>
         </div>
     );

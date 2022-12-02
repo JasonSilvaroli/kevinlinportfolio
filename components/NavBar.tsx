@@ -108,10 +108,10 @@ export const NavBar: React.FC<NavBarProps> = ({ colorModeContext }) => {
                             direction={"row"}
                             justifyContent={largeScreen ? "flex-end" : "center"}
                             alignItems={largeScreen ? "center" : "flex-end"}
-                            spacing={largeScreen ? 4 : 1}
+                            spacing={largeScreen ? 4 : 3}
                             sx={{
                                 marginRight: "7rem",
-                                marginTop: { xs: "-1.5rem", md: "-1rem" },
+                                marginTop: { xs: "-0.5rem", md: "-1rem" },
                                 padding: 0,
                             }}
                         >
@@ -132,7 +132,7 @@ export const NavBar: React.FC<NavBarProps> = ({ colorModeContext }) => {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#about-section">
+                                <Link href="/about">
                                     <Typography
                                         variant={
                                             largeScreen ? "h5" : "subtitle1"
@@ -143,7 +143,7 @@ export const NavBar: React.FC<NavBarProps> = ({ colorModeContext }) => {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#work-section">
+                                <Link href="/previousWork">
                                     <Typography
                                         variant={
                                             largeScreen ? "h5" : "subtitle1"
@@ -154,7 +154,7 @@ export const NavBar: React.FC<NavBarProps> = ({ colorModeContext }) => {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#resume-section">
+                                <Link href="/resume">
                                     <Typography
                                         variant={
                                             largeScreen ? "h5" : "subtitle1"
@@ -165,7 +165,7 @@ export const NavBar: React.FC<NavBarProps> = ({ colorModeContext }) => {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#contact-section">
+                                <Link href="/contact">
                                     <Typography
                                         variant={
                                             largeScreen ? "h5" : "subtitle1"

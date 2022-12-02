@@ -37,7 +37,7 @@ export const About: React.FC<AboutProps> = ({}) => {
                     maxWidth={false}
                     sx={{
                         backgroundColor: "#FBFAF5",
-                        width: "auto",
+                        width: { xs: "75%", md: "50%" },
                         margin: 0,
                         paddingBottom: "3rem",
                     }}
@@ -52,7 +52,7 @@ export const About: React.FC<AboutProps> = ({}) => {
                         <Grid
                             item
                             sx={{
-                                width: { xs: "75%", md: "50%" },
+                                width: "75%",
                                 marginTop: "2rem",
                             }}
                         >

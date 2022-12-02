@@ -36,7 +36,13 @@ export const Title: React.FC<TitleProps> = ({ title }) => {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Grid item sx={{ height: "4rem", marginY: "1rem" }}>
+                <Grid
+                    item
+                    sx={{
+                        height: { xs: "2rem", md: "4rem" },
+                        marginY: { xs: "0.5rem", md: "1rem" },
+                    }}
+                >
                     <Divider
                         orientation="vertical"
                         variant="middle"

@@ -1,10 +1,10 @@
-import { Container, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
-import { About as AboutPage } from "../components/About";
+import { Contact as ContactPage } from "../components/Contact";
 
-interface aboutProps {}
+interface ContactProps {}
 
-export const About: React.FC<aboutProps> = ({}) => {
+export const Contact: React.FC<ContactProps> = ({}) => {
     return (
         <Grid
             container
@@ -13,9 +13,9 @@ export const About: React.FC<aboutProps> = ({}) => {
             alignItems="center"
             sx={{ marginTop: "10rem", marginBottom: "3rem" }}
         >
-            <AboutPage />
+            <ContactPage />
         </Grid>
     );
 };
 
-export default About;
+export default Contact;
