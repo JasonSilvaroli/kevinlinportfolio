@@ -47,7 +47,7 @@ export default function Home() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <a className="anchor" id="about-section"></a>
+                <a id="about-section"></a>
                 <div>
                     <About />
                 </div>
