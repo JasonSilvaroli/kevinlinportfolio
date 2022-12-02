@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['media.wbur.org'],
+    domains: ['media.wbur.org', 'main.dclmg8kjbfkog.amplifyapp.com/', 'linkevin.com'],
   },
 }
 

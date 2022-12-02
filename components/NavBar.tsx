@@ -10,9 +10,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import React, { Context } from "react";
-import LightTheme from "../styles/theme/lightTheme";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+import Logo from "../public/images/logo.png";
 import { createTheme } from "@mui/system";
 import Image from "next/image";
 interface NavBarProps {
@@ -80,7 +78,7 @@ export const NavBar: React.FC<NavBarProps> = ({ colorModeContext }) => {
                                     }}
                                 >
                                     <Image
-                                        src="/../public/images/logo.png"
+                                        src={Logo}
                                         alt="logo"
                                         width="50"
                                         height="50"
