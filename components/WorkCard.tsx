@@ -10,11 +10,12 @@ import {
     useMediaQuery,
     useTheme,
 } from "@mui/material";
-import Image from "next/image";
+import dynamic from "next/dynamic";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface WorkCardProps {
-    image: string;
+    image: StaticImageData;
     description: string;
 }
 
