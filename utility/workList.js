@@ -1,40 +1,67 @@
 const workList = [
     {
-        image:"https://media.wbur.org/wp/2020/05/pencil-standardized-test-1000x667.jpg",
-        description:"Groot geeft omdat loopt tin het het sterk terug een. Lieden handen en",
-        width:300,
-        height:300,
+        image:"image1",
+        description:"Campaign to promote Ritz Crackers as a delicious quick snacking option",
     },
     {
-        image:"https://cdn.discordapp.com/attachments/766373221665603618/952427759676829706/unknown.jpg",
-        description:"Mag bewijs het zelden verder van wat. Kwarts bamboe meende liever van voeten ton mooren aan hun. De bezorgden gomboomen kleederen af de gewijzigd.",
-        width:300,
-        height:400,
+        image:"image2",
+        description:"Campaign to promote Ritz Crackers as a delicious quick snacking option",
     },
     {
-        image:"https://slimber.com/img/images2/58/588361/hgfh.jpg",
-        description:"Mag bewijs het zelden verder van wat. Kwarts bamboe meende liever van voeten ton mooren aan hun. De bezorgden gomboomen kleederen af de gewijzigd.",
-        width:400,
-        height:200,
+        image:"image3",
+        description:"Campaign to promote Ritz Crackers as a delicious quick snacking option",
     },
     {
-        image:"https://www.cctraining.uk.com/wp-content/uploads/2017/09/test.png",
-        description:"Mag bewijs het zelden verder van wat. Kwarts bamboe meende liever van voeten ton mooren aan hun. De bezorgden gomboomen kleederen af de gewijzigd.",
-        width:300,
-        height:400,
+        image:"image4",
+        description:"Campaign to promote Ritz Crackers as a delicious quick snacking option",
     },
     {
-        image:"https://cdn.discordapp.com/attachments/766379333924814910/995541068428877905/IMG_1689.jpg",
-        description:"Mag bewijs het zelden verder van wat. Kwarts bamboe meende liever van voeten ton mooren aan hun. De bezorgden gomboomen kleederen af de gewijzigd.",
-        width:400,
-        height:200,
+        image:"image5",
+        description:"Campaign to promote Ritz Crackers as a delicious quick snacking option",
     },
     {
-        image:"https://www.educationcorner.com/images/featured-test-taking-strategies.jpg",
-        description:"Groot geeft omdat loopt tin het het sterk terug een. Lieden handen en",
-        width:300,
-        height:300,
+        image:"image6",
+        description:"Campaign to promote Ritz Crackers as a delicious quick snacking option",
+    },
+    {
+        image:"image7",
+        description:"IMC Campaign designs for Kraft Hockeyville with our main theme being #HockeyBelongsToYou as we want to make hockey a more inclusive sport. Collaborators - Faby Gomez, Veronica Rodriguez, Matthew Sumook",
+    },
+    {
+        image:"image8",
+        description:"IMC Campaign designs for Kraft Hockeyville with our main theme being #HockeyBelongsToYou as we want to make hockey a more inclusive sport. Collaborators - Faby Gomez, Veronica Rodriguez, Matthew Sumook",
+    },
+    {
+        image:"image9",
+        description:"IMC Campaign designs for Kraft Hockeyville with our main theme being #HockeyBelongsToYou as we want to make hockey a more inclusive sport. Collaborators - Faby Gomez, Veronica Rodriguez, Matthew Sumook",
+    },
+    {
+        image:"image10",
+        description:"IMC Campaign designs for Kraft Hockeyville with our main theme being #HockeyBelongsToYou as we want to make hockey a more inclusive sport. Collaborators - Faby Gomez, Veronica Rodriguez, Matthew Sumook",
+    },
+    {
+        image:"image11",
+        description:"IMC Campaign designs for Kraft Hockeyville with our main theme being #HockeyBelongsToYou as we want to make hockey a more inclusive sport. Collaborators - Faby Gomez, Veronica Rodriguez, Matthew Sumook",
+    },
+    {
+        image:"image12",
+        description:"IMC Campaign designs for Kraft Hockeyville with our main theme being #HockeyBelongsToYou as we want to make hockey a more inclusive sport. Collaborators - Faby Gomez, Veronica Rodriguez, Matthew Sumook",
+    },
+    {
+        image:"image13",
+        description:"Made Trupanion's website design more user friendly - Collaborators: Renston Crasta, Isabel Younan",
+    },
+    {
+        image:"image14",
+        description:"Made Trupanion's website design more user friendly - Collaborators: Renston Crasta, Isabel Younan",
+    },
+    {
+        image:"image15",
+        description:"Made Trupanion's website design more user friendly - Collaborators: Renston Crasta, Isabel Younan",
+    },
+    {
+        image:"image16",
+        description:"Made Trupanion's website design more user friendly - Collaborators: Renston Crasta, Isabel Younan  ",
     },
 ]
-
 export default workList;

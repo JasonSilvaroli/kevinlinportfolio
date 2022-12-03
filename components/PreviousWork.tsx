@@ -64,8 +64,6 @@ export const PreviousWork: React.FC<PreviousWorkProps> = ({}) => {
                                         <WorkCard
                                             image={obj.image}
                                             description={obj.description}
-                                            width={obj.width}
-                                            height={obj.height}
                                         />
                                     </ImageListItem>
                                 );

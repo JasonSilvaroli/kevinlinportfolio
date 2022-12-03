@@ -92,7 +92,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         height="40"
                                     />
                                     <Typography
-                                        variant={largeScreen ? "h4" : "h6"}
+                                        variant={largeScreen ? "h5" : "h6"}
                                         sx={{ marginLeft: "2rem" }}
                                     >
                                         Kevin Lin
@@ -114,7 +114,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h4" : "h6"}
+                                            variant={largeScreen ? "h5" : "h6"}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             +1 647 979 8348
@@ -137,7 +137,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h4" : "h6"}
+                                            variant={largeScreen ? "h5" : "h6"}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             linkevin159@hotmail.com
@@ -161,7 +161,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h4" : "h6"}
+                                            variant={largeScreen ? "h5" : "h6"}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             Linkedin
@@ -185,7 +185,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h4" : "h6"}
+                                            variant={largeScreen ? "h5" : "h6"}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             My Resume
