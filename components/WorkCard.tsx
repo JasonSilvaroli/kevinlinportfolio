@@ -1,5 +1,6 @@
 import {
     Box,
+    Button,
     Card,
     Container,
     Grid,
@@ -46,6 +47,9 @@ export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
         >
             <Modal open={open} onClose={handleClose}>
                 <Container sx={{ maxWidth: "80%", height: "50%" }}>
+                    <Button onClick={handleClose} variant="contained">
+                        Close
+                    </Button>
                     <Image
                         alt="content"
                         src={image}
