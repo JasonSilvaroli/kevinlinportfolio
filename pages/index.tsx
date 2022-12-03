@@ -31,7 +31,7 @@ export default function Home() {
                         letterSpacing={5}
                         fontWeight="300"
                     >
-                        Creative Advertising
+                        Art Direction
                     </Typography>
                 </Grid>
             </Grid>

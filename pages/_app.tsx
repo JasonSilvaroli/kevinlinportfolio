@@ -32,7 +32,7 @@ const MyApp = (props: any) => {
         <CacheProvider value={emotionCache}>
             <ThemeProvider theme={theme}>
                 <Head>
-                    <title>Kevin Lin - Creative Advertising</title>
+                    <title>Kevin Lin - Art Direction</title>
                     <link
                         rel="apple-touch-icon"
                         sizes="180x180"

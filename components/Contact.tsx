@@ -131,7 +131,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                 >
                                     <EmailIcon fontSize="large" />
                                     <a
-                                        href="mailto:kevinlin@gmail.com"
+                                        href="mailto:linkevin159@hotmail.com"
                                         style={{
                                             color: "#0D1321",
                                         }}
@@ -140,7 +140,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                             variant={largeScreen ? "h4" : "h6"}
                                             sx={{ marginLeft: "2rem" }}
                                         >
-                                            kevinlin@gmail.com
+                                            linkevin159@hotmail.com
                                         </Typography>
                                     </a>
                                 </Grid>
