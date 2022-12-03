@@ -48,7 +48,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
                 <Container sx={{ maxWidth: "80%", height: "50%" }}>
                     <Image
                         alt="content"
-                        src={`/../public/images/campaigns/${image}.png`}
+                        src={image}
                         style={{
                             height: "auto",
                             maxWidth: largeScreen ? "500px" : "300px",
@@ -61,7 +61,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
             </Modal>
             <Image
                 alt="content"
-                src={`/../public/images/campaigns/${image}.png`}
+                src={image}
                 style={{
                     width: "100%",
                     height: "auto",
