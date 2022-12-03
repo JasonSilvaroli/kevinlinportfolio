@@ -11,7 +11,7 @@ export const resume: React.FC<resumeProps> = ({}) => {
             direction="column"
             justifyContent="center"
             alignItems="center"
-            sx={{ marginTop: "10%" }}
+            sx={{ marginTop: "10rem", marginBottom: "3rem" }}
         >
             <Resume />
         </Grid>

@@ -178,7 +178,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                 >
                                     <DownloadIcon fontSize="large" />
                                     <a
-                                        href="https://www.linkedin.com/in/kevinlin2001/"
+                                        href="https://drive.google.com/file/d/1rSclA5gs_UbGGy1aCOWixukg9qQEPLXb/preview"
                                         target="_blank"
                                         style={{
                                             color: "#0D1321",

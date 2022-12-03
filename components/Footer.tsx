@@ -44,16 +44,16 @@ export const Footer: React.FC<FooterProps> = ({}) => {
                 >
                     &#169; 2022 by Kevin Lin. Website created by&nbsp;
                 </Typography>
-                <a href="https://www.jasonsilvaroli.com" target="_blank">
-                    <Typography
-                        variant={largeScreen ? "overline" : "subtitle1"}
-                        fontSize={10}
-                        display="inline-block"
-                        sx={{ textDecoration: "underline" }}
-                    >
-                        Jason Silvaroli
-                    </Typography>
-                </a>
+                {/* <a href="https://www.jasonsilvaroli.com" target="_blank"> */}
+                <Typography
+                    variant={largeScreen ? "overline" : "subtitle1"}
+                    fontSize={10}
+                    display="inline-block"
+                    sx={{ textDecoration: "underline" }}
+                >
+                    Jason Silvaroli
+                </Typography>
+                {/* </a> */}
             </Paper>
         </ThemeProvider>
     );

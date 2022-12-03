@@ -1,4 +1,5 @@
 import {
+    Button,
     Container,
     createTheme,
     Divider,
@@ -28,13 +29,21 @@ export const Resume: React.FC<ResumeProps> = ({}) => {
         },
     });
 
+    const handleClick = () => {
+        window.open(
+            "https://drive.google.com/file/d/1rSclA5gs_UbGGy1aCOWixukg9qQEPLXb/preview",
+            "_blank",
+            "noopener,noreferrer"
+        );
+    };
+
     return (
         <ThemeProvider theme={theme}>
             <Container
                 maxWidth={false}
                 sx={{
                     backgroundColor: "#FBFAF5",
-                    width: "auto",
+                    width: { xs: "90%", md: "50%" },
                     margin: 0,
                     paddingBottom: "3rem",
                 }}
@@ -48,219 +57,26 @@ export const Resume: React.FC<ResumeProps> = ({}) => {
                     <Grid item>
                         <Title title="Resume" />
                     </Grid>
-                    <Grid
-                        container
-                        item
-                        direction="row"
-                        justifyContent="space-between"
-                        alignItems="flex-start"
-                        sx={{ marginTop: "1rem" }}
-                    >
-                        <Grid
-                            xs
-                            item
-                            container
-                            direction="row"
-                            justifyContent="flex-start"
-                            alignItems="flex-start"
-                            sx={{ marginLeft: "10%" }}
-                        >
-                            <EmailIcon />
-                            <a
-                                href="mailto:kevinlin@gmail.com"
-                                style={{
-                                    textDecoration: "underline",
-                                    color: "#0D1321",
-                                }}
-                            >
-                                kevinlin@gmail.com
-                            </a>
-                        </Grid>
-                        <Grid
-                            xs
-                            item
-                            container
-                            direction="row"
-                            justifyContent="flex-start"
-                            alignItems="flex-start"
-                        >
-                            <PhonelinkRingIcon />
-                            <a
-                                href="tel:+1 647 234 8643"
-                                style={{
-                                    textDecoration: "underline",
-                                    color: "#0D1321",
-                                }}
-                            >
-                                +1 647 234 8643
-                            </a>
-                        </Grid>
-                        <Grid
-                            xs
-                            item
-                            container
-                            direction="row"
-                            justifyContent="flex-start"
-                            alignItems="flex-start"
-                        >
-                            <PlaceIcon />
-                            <a
-                                href="https://www.google.com/maps/place/Toronto,+ON/@43.7181552,-79.5184826,11z/"
-                                target="_blank"
-                                style={{
-                                    textDecoration: "underline",
-                                    color: "#0D1321",
-                                }}
-                            >
-                                Toronto, Ontario
-                            </a>
-                        </Grid>
+                    <Grid item sx={{ marginTop: "1rem" }}>
+                        <Button variant="contained" onClick={handleClick}>
+                            Download
+                        </Button>
                     </Grid>
                     <Grid
                         item
-                        container
-                        direction="row"
-                        justifyContent="space-between"
-                        alignItems="flex-start"
-                        sx={{ marginTop: "5rem" }}
+                        sx={{
+                            height: { xs: "25rem", md: "55rem" },
+                            width: "100%",
+                            marginTop: "1rem",
+                        }}
                     >
-                        <Grid
-                            md
-                            item
-                            container
-                            direction="column"
-                            justifyContent="flex-start"
-                            alignItems="flex-start"
-                            sx={{ marginLeft: "10%" }}
-                        >
-                            <Grid item>
-                                <Typography variant="h4">Education</Typography>
-                                <Divider
-                                    variant="middle"
-                                    sx={{
-                                        borderBottomWidth: "0.2rem",
-                                        color: "#F4FFF8",
-                                        background: "#F4FFF8",
-                                    }}
-                                />
-                            </Grid>
-                            <Grid item sx={{ marginTop: "1rem" }}>
-                                {ResumeInfo.education.map((item, index) => {
-                                    return (
-                                        <Grid
-                                            item
-                                            sx={{ marginTop: "0.5rem" }}
-                                            key={index}
-                                        >
-                                            <Typography variant="h5">
-                                                {item.name}
-                                            </Typography>
-                                            <Typography variant="body1">
-                                                {item.programName}
-                                            </Typography>
-                                            <Typography variant="overline">
-                                                {item.length}
-                                            </Typography>
-                                        </Grid>
-                                    );
-                                })}
-                            </Grid>
-                            <Grid item sx={{ marginTop: "2rem" }}>
-                                <Typography variant="h4">Skills</Typography>
-                                <Divider
-                                    variant="middle"
-                                    sx={{
-                                        borderBottomWidth: "0.2rem",
-                                        color: "#F4FFF8",
-                                        background: "#F4FFF8",
-                                    }}
-                                />
-                            </Grid>
-                            <Grid item>
-                                {ResumeInfo.skills.map((item, index) => {
-                                    return (
-                                        <Grid
-                                            item
-                                            sx={{
-                                                marginTop: "1rem",
-                                            }}
-                                            key={index}
-                                        >
-                                            <Grid item>
-                                                <Typography>{item}</Typography>
-                                            </Grid>
-                                        </Grid>
-                                    );
-                                })}
-                            </Grid>
-                        </Grid>
-                        <Grid
-                            md
-                            item
-                            container
-                            direction="column"
-                            justifyContent="flex-start"
-                            alignItems="flex-start"
-                        >
-                            <Grid item>
-                                <Typography variant="h4">Experience</Typography>
-                                <Divider
-                                    variant="middle"
-                                    sx={{
-                                        borderBottomWidth: "0.2rem",
-                                        color: "#F4FFF8",
-                                        background: "#F4FFF8",
-                                    }}
-                                />
-                            </Grid>
-
-                            <Grid item sx={{ width: "50%" }}>
-                                {ResumeInfo.experience.map((item, index) => {
-                                    return (
-                                        <Grid
-                                            item
-                                            sx={{
-                                                marginTop: "1rem",
-                                            }}
-                                            key={index}
-                                        >
-                                            <Typography
-                                                variant="h5"
-                                                sx={{ marginBottom: "0.5rem" }}
-                                            >
-                                                {item.name}
-                                            </Typography>
-                                            <Typography
-                                                variant="body1"
-                                                sx={{ marginBottom: "0.3rem" }}
-                                            >
-                                                {item.title}
-                                            </Typography>
-                                            <Typography
-                                                variant="body2"
-                                                sx={{ marginBottom: "0.3rem" }}
-                                            >
-                                                {item.length}
-                                            </Typography>
-                                            <Typography
-                                                variant="body2"
-                                                display="block"
-                                            >
-                                                {item.description}
-                                            </Typography>
-                                        </Grid>
-                                    );
-                                })}
-                            </Grid>
-                        </Grid>
-                        <Grid
-                            md
-                            item
-                            container
-                            direction="column"
-                            justifyContent="center"
-                            alignItems="center"
-                        ></Grid>
+                        <iframe
+                            src="https://drive.google.com/file/d/1rSclA5gs_UbGGy1aCOWixukg9qQEPLXb/preview"
+                            width="100%"
+                            height="100%"
+                            allow="autoplay"
+                            style={{ overflow: "hidden" }}
+                        ></iframe>
                     </Grid>
                 </Grid>
             </Container>
