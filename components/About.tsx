@@ -105,18 +105,21 @@ export const About: React.FC<AboutProps> = ({}) => {
                                     forward to meeting new people and hearing
                                     their story!
                                 </Typography>
+                                <br />
+                                <br />
                                 <Link href="/contact">
                                     <Typography
-                                        display="inline"
                                         variant="body1"
+                                        textAlign="center"
                                     >
-                                        &#160;Contact Me
+                                        Contact Me
                                     </Typography>
                                 </Link>
                                 <br />
-                                <br />
+
                                 <Typography
                                     variant="subtitle2"
+                                    textAlign="center"
                                     fontWeight={400}
                                 >
                                     P.S. I have dual citizenship in case you are
