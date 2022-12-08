@@ -6,7 +6,7 @@ import ritzimage4 from "../public/images/campaigns/ritzimage4.png";
 import ritzimage5 from "../public/images/campaigns/ritzimage5.png";
 import ritzimage6 from "../public/images/campaigns/ritzimage6.png";
 
-import hockeyvilleicon from "../public/images/campaigns/hockeyvilleicon.png";
+import hockeyvilleicon from "../public/images/campaigns/hockeyvilleIcon.png";
 import hockeyimage1 from "../public/images/campaigns/hockeyimage1.png";
 import hockeyimage2 from "../public/images/campaigns/hockeyimage2.png";
 import hockeyimage3 from "../public/images/campaigns/hockeyimage3.png";
