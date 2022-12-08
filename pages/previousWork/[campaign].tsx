@@ -9,6 +9,7 @@ import {
     useMediaQuery,
     useTheme,
     IconButton,
+    Divider,
 } from "@mui/material";
 import { useRouter } from "next/router";
 import React from "react";
@@ -84,66 +85,96 @@ const Campaign: React.FC<campaignProps> = ({}) => {
                 </Grid>
                 <Grid item sx={{ marginTop: "5rem" }}>
                     {campaignInfo.complete && (
-                        <Carousel
-                            cols={3}
-                            rows={1}
-                            gap={10}
-                            loop={true}
-                            autoplay={10000}
-                        >
-                            {campaignInfo.photos?.map((obj, index) => {
-                                return (
-                                    <Carousel.Item>
-                                        <Grid
-                                            container
-                                            direction="column"
-                                            justifyContent="center"
-                                            alignItems="center"
-                                            onClick={() => handleOpen(index)}
-                                            id="test"
-                                            style={{ height: "100%" }}
-                                        >
+                        <div>
+                            <Carousel
+                                cols={3}
+                                rows={1}
+                                gap={10}
+                                loop={true}
+                                autoplay={10000}
+                            >
+                                {campaignInfo.photos?.map((obj, index) => {
+                                    return (
+                                        <Carousel.Item>
                                             <Grid
-                                                item
+                                                container
+                                                direction="column"
+                                                justifyContent="center"
+                                                alignItems="center"
+                                                onClick={() =>
+                                                    handleOpen(index)
+                                                }
+                                                id="test"
                                                 style={{ height: "100%" }}
                                             >
-                                                <Image
-                                                    src={obj}
-                                                    alt={String(index)}
-                                                    key={index}
-                                                    style={{
-                                                        width: "100%",
-                                                        height: "100%",
-                                                        objectFit: "contain",
-                                                    }}
-                                                />
+                                                <Grid
+                                                    item
+                                                    style={{ height: "100%" }}
+                                                >
+                                                    <Image
+                                                        src={obj}
+                                                        alt={String(index)}
+                                                        key={index}
+                                                        style={{
+                                                            width: "100%",
+                                                            height: "100%",
+                                                            objectFit:
+                                                                "contain",
+                                                        }}
+                                                    />
+                                                </Grid>
                                             </Grid>
-                                        </Grid>
-                                        <Modal
-                                            open={open === index}
-                                            onClose={handleClose}
-                                            sx={{ width: "100%", margin: 0 }}
-                                        >
-                                            <Box
-                                                sx={style}
-                                                onClick={handleClose}
+                                            <Modal
+                                                open={open === index}
+                                                onClose={handleClose}
+                                                sx={{
+                                                    width: "100%",
+                                                    margin: 0,
+                                                }}
                                             >
-                                                <Image
-                                                    src={obj}
-                                                    alt={String(index)}
-                                                    key={index}
-                                                    style={{
-                                                        maxWidth: "90vw",
-                                                        maxHeight: "90vh",
-                                                        objectFit: "contain",
-                                                    }}
-                                                />
-                                            </Box>
-                                        </Modal>
-                                    </Carousel.Item>
-                                );
-                            })}
-                        </Carousel>
+                                                <Box
+                                                    sx={style}
+                                                    onClick={handleClose}
+                                                >
+                                                    <Image
+                                                        src={obj}
+                                                        alt={String(index)}
+                                                        key={index}
+                                                        style={{
+                                                            maxWidth: "90vw",
+                                                            maxHeight: "90vh",
+                                                            objectFit:
+                                                                "contain",
+                                                        }}
+                                                    />
+                                                </Box>
+                                            </Modal>
+                                        </Carousel.Item>
+                                    );
+                                })}
+                            </Carousel>
+                            {campaignInfo.collaborators?.length !== 0 && (
+                                <div>
+                                    <Divider
+                                        sx={{
+                                            margin: "auto",
+                                            marginY: "5vh",
+                                            width: "90%",
+                                        }}
+                                    ></Divider>
+                                    <Typography textAlign="center" variant="h5">
+                                        Collaborators
+                                    </Typography>
+                                    {campaignInfo.collaborators?.map((name) => {
+                                        return (
+                                            <Typography textAlign="center">
+                                                {name}
+                                            </Typography>
+                                        );
+                                    })}
+                                </div>
+                            )}
+                        </div>
                     )}
                 </Grid>
                 {!campaignInfo.complete && (
