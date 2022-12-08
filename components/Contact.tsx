@@ -37,6 +37,8 @@ export const Contact: React.FC<ContactProps> = ({}) => {
 
     const largeScreen = useMediaQuery(theme.breakpoints.up("md"));
 
+    const typographyVariant = largeScreen ? "h5" : "subtitle1";
+
     return (
         <ThemeProvider theme={theme}>
             <ThemeProvider theme={innerTheme}>
@@ -92,7 +94,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         height="40"
                                     />
                                     <Typography
-                                        variant={largeScreen ? "h5" : "h6"}
+                                        variant={typographyVariant}
                                         sx={{ marginLeft: "2rem" }}
                                     >
                                         Kevin Lin
@@ -114,7 +116,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h5" : "h6"}
+                                            variant={typographyVariant}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             +1 647 979 8348
@@ -137,7 +139,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h5" : "h6"}
+                                            variant={typographyVariant}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             linkevin159@hotmail.com
@@ -161,7 +163,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h5" : "h6"}
+                                            variant={typographyVariant}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             Linkedin
@@ -185,7 +187,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         }}
                                     >
                                         <Typography
-                                            variant={largeScreen ? "h5" : "h6"}
+                                            variant={typographyVariant}
                                             sx={{ marginLeft: "2rem" }}
                                         >
                                             My Resume

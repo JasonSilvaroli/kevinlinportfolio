@@ -11,7 +11,12 @@ export const PreviousWork: React.FC<PreviousWorkProps> = ({}) => {
             direction="column"
             justifyContent="center"
             alignItems="center"
-            sx={{ marginTop: "10rem", marginBottom: "3rem" }}
+            sx={{
+                margin: "auto",
+                marginTop: "10rem",
+                marginBottom: "3rem",
+                maxWidth: "90vw",
+            }}
         >
             <PreviousWorkPage />
         </Grid>

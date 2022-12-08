@@ -55,15 +55,19 @@ export const Title: React.FC<TitleProps> = ({ title, subtitle = "" }) => {
                     />
                 </Grid>
                 <Grid item>
-                    <Typography variant={largeScreen ? "h3" : "h4"}>
+                    <Typography
+                        variant={largeScreen ? "h3" : "h4"}
+                        textAlign="center"
+                    >
                         {title}
                     </Typography>
                 </Grid>
                 {subtitle !== "" && (
                     <Grid item>
                         <Typography
-                            variant={largeScreen ? "h6" : "h6"}
+                            variant={largeScreen ? "h6" : "body1"}
                             textAlign="center"
+                            sx={{ maxWidth: "95%", margin: "auto" }}
                         >
                             {subtitle}
                         </Typography>

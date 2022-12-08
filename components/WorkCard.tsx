@@ -12,28 +12,33 @@ import {
 } from "@mui/material";
 import dynamic from "next/dynamic";
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 
 interface WorkCardProps {
     image: StaticImageData;
     description: string;
+    id: string;
 }
 
-export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
+export const WorkCard: React.FC<WorkCardProps> = ({
+    image,
+    description,
+    id,
+}) => {
     const [hovered, setHovered] = React.useState("none");
 
     const theme = useTheme();
 
     const largeScreen = useMediaQuery(theme.breakpoints.up("md"));
 
-    const imageMaxW = largeScreen ? "200px" : "500px";
+    const imageMaxW = largeScreen ? "500px" : "200px";
 
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => {
-        setOpen(true);
-        console.log("here");
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push(`/previousWork/${id}`);
     };
-    const handleClose = () => setOpen(false);
 
     return (
         <Paper
@@ -41,44 +46,22 @@ export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
                 width: "fit-content",
                 position: "relative",
                 zIndex: 5,
-                minHeight: "150px",
             }}
             onMouseEnter={() => setHovered("inline")}
             onMouseLeave={() => setHovered("none")}
         >
-            <Modal open={open} onClose={handleClose}>
-                <Container sx={{ maxWidth: "80%", height: "50%" }}>
-                    <Button onClick={handleClose} variant="contained">
-                        Close
-                    </Button>
-                    <Image
-                        alt="content"
-                        src={image}
-                        style={{
-                            height: "auto",
-                            maxWidth: largeScreen ? "500px" : "300px",
-                            minHeight: "250",
-                        }}
-                        width="800"
-                        height="100"
-                    />
-                </Container>
-            </Modal>
             <Image
                 alt="content"
                 src={image}
                 style={{
                     width: "100%",
                     height: "auto",
-                    maxWidth: largeScreen ? "500px" : "300px",
+                    maxWidth: imageMaxW,
                     minHeight: "250",
                 }}
-                width="200"
-                height="100"
             />
             <Grid
                 container
-                onClick={handleOpen}
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
@@ -89,12 +72,13 @@ export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
                     height: "100%",
                     left: 0,
                     background:
-                        "radial-gradient(circle, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.7) 100%)",
+                        "radial-gradient(circle, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.8) 100%)",
+                    cursor: "pointer",
                 }}
+                onClick={handleClick}
             >
                 <Grid
                     item
-                    onClick={handleOpen}
                     sx={{
                         margin: "auto",
                         position: "absolute",
@@ -103,10 +87,9 @@ export const WorkCard: React.FC<WorkCardProps> = ({ image, description }) => {
                     }}
                 >
                     <Typography
-                        onClick={handleOpen}
                         textAlign="center"
                         variant="body1"
-                        fontSize={12}
+                        fontWeight={"bold"}
                         sx={{ color: "#FBFAF5", height: "max-content" }}
                     >
                         {description}

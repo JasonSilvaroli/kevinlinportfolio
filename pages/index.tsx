@@ -1,6 +1,9 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import Link from "next/link";
+import React from "react";
 import styles from "../styles/Home.module.css";
+
+import { ritzCampaign } from "../utility/createProjects";
 
 export default function Home() {
     return (
