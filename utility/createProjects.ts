@@ -22,6 +22,15 @@ import trupanionimage4 from "../public/images/campaigns/trupanionimage4.png";
 import trupanionimage5 from "../public/images/campaigns/trupanionimage5.png";
 
 import uniqloicon from "../public/images/campaigns/uniqloicon.png";
+import uniqloimage1 from "../public/images/campaigns/uniqloimage1.png";
+import uniqloimage2 from "../public/images/campaigns/uniqloimage2.png";
+import uniqloimage3 from "../public/images/campaigns/uniqloimage3.png";
+import uniqloimage4 from "../public/images/campaigns/uniqloimage4.png";
+import uniqloimage5 from "../public/images/campaigns/uniqloimage5.png";
+import uniqloimage6 from "../public/images/campaigns/uniqloimage6.png";
+import uniqloimage7 from "../public/images/campaigns/uniqloimage7.png";
+import uniqloimage8 from "../public/images/campaigns/uniqloimage8.png";
+import uniqloimage9 from "../public/images/campaigns/uniqloimage9.png";
 
 import essenceicon from "../public/images/campaigns/essenceicon.png";
 
@@ -104,12 +113,23 @@ export const trupanionCampaign = {
 
 export const uniqloCampaign = {
     id: "uniqlo",
-    name: "Uniqlo Campaign",
-    description: "To be added shortly!",
+    name: "Uniqlo X Me Campaign",
+    description:
+        "Uniqlo X Me is a concept that we came up with that lets the customers have a say in their clothing design. We ask them to send in their own designs and create unique pieces for them.",
     logo: uniqloicon,
-    photos: [],
-    collaborators: [],
-    complete: false,
+    photos: [
+        uniqloimage1,
+        uniqloimage2,
+        uniqloimage3,
+        uniqloimage4,
+        uniqloimage5,
+        uniqloimage6,
+        uniqloimage7,
+        uniqloimage8,
+        uniqloimage9,
+    ],
+    collaborators: ["Melina Mckenzie"],
+    complete: true,
 };
 
 export const essenceCampaign = {

@@ -121,6 +121,7 @@ const Campaign: React.FC<campaignProps> = ({}) => {
                                                             objectFit:
                                                                 "contain",
                                                         }}
+                                                        priority
                                                     />
                                                 </Grid>
                                             </Grid>
